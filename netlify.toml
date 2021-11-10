@@ -1,0 +1,14 @@
+[build]
+  command = "yarn build"
+  publish = "dist"
+
+[context.deploy-preview]
+  command = "yarn build-preview"
+
+[[redirects]]
+  from = "/slack"
+  to = "https://join.slack.com/t/jamstack/shared_invite/zt-fpqaceec-SZuiLEa7YdLUXHAXrWPWgQ"
+
+[[redirects]]
+  from = "/diversity"
+  to = "/code-of-conduct"
