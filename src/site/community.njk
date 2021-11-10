@@ -1,0 +1,42 @@
+---
+title: Community
+layout: layouts/base.njk
+---
+
+<section class="md:mt-20">
+  <h1 class="heading">Community</h1>
+  <p class="section-lede">
+      Connect with other Jamstackers at meetups and event, in real life and online.
+  </p>
+  <p class="max-w-lg">
+    There are a growing number of Jamstack meetups and events happening around the world. Find out how to participate.
+  </p>
+</section>
+
+<section class="mt-12">
+  <h2 class="heading">Jamstack meetups</h2>
+  <p class="section-lede">
+    People all around the world are gathering to talk about the Jamstack at meetups.
+  </p>
+  <p class="max-w-xl">
+    Find a meetup near you, or if there is nothing in your area and you're interested in organizing your own regualr Jamstack Meetup, <a href="mailto:community@netlify.com">get in touch</a> to see how we can help.
+  </p>
+  <ul class="columns-3 mt-8">
+    {%- for item in community | sort(false, false, 'name') %}
+      <li><a href="{{ item.link }}" target="_BLANK" rel="noopener"> {{ item.name }}</a></li>
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="mt-12 ">
+  <h2 class="heading">Upcoming community events</h2>
+  <ul>
+  {% for meetup, data in meetups %}
+    {% set item = meetup%}
+    {% include "components/meetup-link.njk" %}
+  {% endfor %}
+  </ul>
+</section>
+
+{% include "slack-tout.njk" %}
+
