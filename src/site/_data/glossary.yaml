@@ -1,0 +1,64 @@
+- term: 'CDN (Content Delivery Network)'
+  id: 'cdn'
+  definition: 'A distributed network optimized for serving assets to users. By being geographically distributed, a CDN can provide redundancy adn also improve delovery performance as a result of servicing requests from the infrastructure closest to the user making the request.'
+
+- term: 'Edge Network'
+  id: 'edge-network'
+
+- term: 'Serverless'
+  id: 'serverless'
+
+- term: 'Pre-render / Pre-generate'
+  id: 'pre-render'
+  definition: 'To generate the markup which represents a view in advance of when it is required. This happens during a build rather than on-demand so that web servers do not need to perform this activity for each request recieved.'
+
+- term: 'Server render'
+  id: 'server-render'
+  definition: 'To generate markup on the server rather than on the client. Server render usually refers to the process happening at request time, rather than at build time. Some do use this term as a catch all for any rendering taking place on a server, and so disambiguation is often sensible.'
+
+- term: 'Static site generator'
+  id: 'ssg'
+  definition: "A tool which can be run as part of a build to transform content, data, and templates into files which can be deployed to a hosting environment as a ready-to-serve web site. Find a more detailed description in this article: <a href='https://www.netlify.com/blog/2020/04/14/what-is-a-static-site-generator-and-3-ways-to-find-the-best-one/?utm_source=jamstackorg&utm_medium=what-are-ssg-pnh&utm_campaign=devex'>What is a Static Site Generator? And 3 ways to find the best one</a>."
+
+- term: 'Headless Technology'
+  id: 'headless-technology'
+  definition: 'The term "headless" refers to removing the dependency of knowing where data will be displayed and instead just holding the data to be used wherever the developer chooses. This is often used to describe a CMS where content can be entered, held, then where and how that content is displayed is decided separately.'
+
+- term: 'Client render'
+  id: 'client-render'
+  definition: 'To generate the view of content in the browser using JavaScript. This often involves transmitting data to the browser rather than markup which is ready for the browser to display, and then using JavaScript to transform that data into a view by modifying the DOM'
+
+- term: 'Hydration'
+  id: 'hydration'
+
+- term: 'Decoupling'
+  id: 'decoupling'
+
+- term: 'Dynamic server'
+  id: 'dynamic-server'
+  
+- term: 'API'
+  id: 'api'
+  definition: 'API is the acronym for Application Programming Interface. It defines interactions that allows two applications to talk to each other.'
+  
+- term: 'API Economy'
+  id: 'api-economy'
+  definition: 'A term that has come to mean the depth and breadth of APIs that are available for developers to use in the current landscape.'
+
+- term: 'Microservice'
+  id: 'microservice'
+  definition: 'A programming paradigm where many parts of a large application are broken down into various units that have smaller responsibility. We can use Serverless or APIs for this, but it''s not that APIs or Serverless are necessarily Microservices, it''s that we have split apart what we want to access, and that modularity is what we call Microservices.'
+
+- term: 'Monolith'
+  id: 'monolith'
+
+- term: 'Monorepo'
+  id: 'monorepo'  
+
+- term: 'Markup'
+  id: 'Markup'
+
+- term: 'Markdown'
+  id: 'Markdown'
+
+  
