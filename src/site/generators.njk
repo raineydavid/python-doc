@@ -1,0 +1,30 @@
+---
+title: Site Generators
+layout: layouts/base.njk
+---
+
+<section class="md:mt-20">
+  <h1 class="heading">Site Generators</h1>
+  <p class="section-lede">
+    A NEW HOME FOR STATICGEN CONTENT
+  </p>
+  <p class="max-w-l">
+    About this data...
+  </p>
+</section>
+
+<section class="mt-12">
+  <div class="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+  {% for item in collections.generators %}
+    {% include "components/generator-card.njk" %}
+  {% endfor %}
+  </div>
+</section>
+
+<section class="mt-12">
+  <h2 class="text-white font-semi-bold text-3xl">Contribute</h2>
+  <p>
+    Should your site be featuired here in this gallery? Let us know about it by <a href="{{ pkg.repository.url }}" target="_BLANK" rel="noopener">opening a pull request</a>.
+  </p>
+</section>
+
