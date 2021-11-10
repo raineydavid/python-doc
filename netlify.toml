@@ -1,0 +1,47 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "12.16.2"
+  NODE_ENV = "production"
+
+[dev]
+  command = "npm run watch"
+  publish = "dist"
+
+[[redirects]]
+  from = "/conference"
+  to = "https://jamstackconf.com/"
+  status = 302
+
+[[redirects]]
+  from = "/best-practices"
+  to = "/resources"
+  status = 301
+
+[[redirects]]
+  from = "/diversity"
+  to = "/code-of-conduct"
+  status = 301
+
+
+# Config for the Netlify Build Plugin: netlify-plugin-minify-html
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+
+  # Specify which deploy contexts we'll minify HTML in.
+  # Supports any Deploy Contexts available in Netlify.
+  # https://docs.netlify.com/site-deploys/overview/#deploy-contexts
+  [plugins.inputs]
+    contexts = [
+      'production',
+      'branch-deploy',
+      'deploy-preview'
+    ]
+
+  # Optionally, override the default options for the minification
+  # https://github.com/kangax/html-minifier#options-quick-reference
+  [plugins.inputs.minifierOptions]
+    removeComments = true
+    collapseInlineTagWhitespace = false

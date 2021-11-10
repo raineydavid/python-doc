@@ -1,0 +1,10 @@
+# dependecies installed by npm
+node_modules
+
+# build artefacts
+dist
+
+# macOS related files
+.DS_Store
+.AppleDouble
+.LSOverride

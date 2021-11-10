@@ -1,0 +1,21 @@
+---
+title: Glossary
+layout: layouts/base.njk
+---
+
+<section class="md:mt-20">
+  <h1 class="heading">Glossary</h1>
+  <p class="section-lede">
+    Definitions of regularly used related terms.
+  </p>
+  <p class="max-w-lg">
+    Technologies often include confusing terminology. You can help us to maintain this list of terms often used when talking about Jamstack and web development <a href="#">by creating an issue</a>.
+  </p>
+</section>
+
+<dl>
+  {% for item in glossary %}
+  {% include "components/glossary-item.njk" %}
+  {% endfor %}
+</dl>
+

@@ -1,0 +1,10 @@
+---
+title: data
+pagination:
+  data: resources
+  size: 1
+  alias: example
+permalink: /exampledata/resources/{{ example.title | lower | slug }}.yaml
+---
+
+{{ example | dumpasyaml | safe }}
