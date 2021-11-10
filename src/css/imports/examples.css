@@ -1,0 +1,143 @@
+.examples {
+  background-image: linear-gradient(0deg, $lighterGrey 0%, white 100%);
+  padding-top: 124px;
+  text-align: left;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 144px;
+  }
+
+  .cta {
+    margin-bottom: $small;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 54px;
+    }
+
+    h1, p {
+      @media screen and (min-width: $tablet) {
+        width: 48%;
+      }
+    }
+
+    h1 {
+      margin: 0 4% $medium 0;
+
+      @media screen and (min-width: $tablet) {
+        font-size: 17px;
+        font-style: italic;
+        line-height: 26px;
+        margin-bottom: $small;
+      }
+    }
+
+    strong {
+      display: block;
+    }
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .example {
+    color: $grey;
+
+    @media screen and (min-width: $tablet) {
+      width: 48%;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 30%;
+    }
+
+    &:nth-child(2n) {
+      @media screen and (min-width: $tablet) and (max-width: 959px) {
+        margin: 0 0 0 4%;
+      }
+    }
+
+    &:nth-child(3n - 1) {
+      @media screen and (min-width: $desktop) {
+        margin: 0 5%;
+      }
+    }
+
+    &:hover {
+      img {
+        box-shadow: 0 $micro $small rgba(0,0,0,0.2);
+      }
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: $bold;
+      line-height: 34px;
+      margin: 0 0 6px 0;
+    }
+  }
+
+  .browser {
+    background: $lighterGrey;
+    border: 1px solid #BCBCBC;
+    border-bottom: none;
+    border-radius: $borderRadius $borderRadius 0 0;
+    color: #BCBCBC;
+    line-height: 0;
+    overflow: hidden;
+
+    .controls {
+      background: white;
+      box-shadow: calc($micro / 2) 0 0 #BCBCBC;
+      clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+      padding: calc($micro / 2) calc($micro / 4) 7px calc($micro / 4);
+      width: $small;
+    }
+  }
+
+  img {
+    box-sizing: border-box;
+    border: 1px solid #BCBCBC;
+    border-radius: 0 0 $borderRadius $borderRadius;
+    box-shadow: 0 0 $micro rgba(0,0,0,0);
+    height: auto;
+    margin-bottom: 26px;
+    transition: box-shadow .2s ease;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  p:not(.cta) {
+    font-size: $tiny;
+    font-weight: $regular;
+    line-height: 28px;
+    margin: 0 0 26px 0;
+  }
+
+  .tools {
+    list-style-type: none;
+    margin: $micro 0 34px 0;
+    padding: 0;
+    -moz-column-count: 2;
+    -moz-column-gap: $tiny;
+    -webkit-column-count: 2;
+    -webkit-column-gap: $tiny;
+    column-count: 2;
+    column-gap: $tiny;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 58px;
+    }
+
+    li {
+      font-weight: $regular;
+      &:before {
+        content: '• ';
+      }
+    }
+  }
+}
