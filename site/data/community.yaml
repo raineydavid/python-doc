@@ -1,0 +1,126 @@
+chapters:
+  - name: JAMstack San Francisco
+    artpath: /img/chapters/sf-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/jamstack-sf/
+  - name: JAMstack Austin
+    artpath: /img/chapters/austin-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-Austin/
+  - name: JAMstack Boston
+    artpath: /img/chapters/boston-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-Boston/
+  - name: JAMstack Porto
+    artpath: /img/chapters/porto-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-Porto/
+  - name: JAMstack NYC
+    artpath: /img/chapters/nyc-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-nyc/
+  - name: JAMstack London
+    artpath: /img/chapters/london-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-London/
+  - name: JAMstack Berlin
+    artpath: /img/chapters/berlin-illo.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMStack_berlin/
+  - name: JAMstack Wrocław
+    artpath: /img/chapters/wroclaw-illo.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMStack-Wroclaw/
+  - name: JAMstack Portland
+    artpath: /img/chapters/portland-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-Portland/
+  - name: JAMstack Hamburg
+    artpath: /img/chapters/hamburg-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-Hamburg/
+  - name: JAMstack Bengaluru
+    artpath: /img/chapters/bengaluru-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-Bengaluru/
+  - name: JAMstack Paris
+    artpath: /img/chapters/paris-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/fr-FR/JAMstack-paris/
+  - name: JAMstack Seattle
+    artpath: /img/chapters/seattle-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/jamstack-seattle/
+  - name: JAMstack Tokyo
+    artpath: /img/chapters/tokyo-art.svg
+    btncopy: Join Now
+    link: https://jamstack-tokyo.connpass.com/
+  - name: JAMstack Lisbon
+    artpath: /img/chapters/lisbon-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-Lisbon/
+  - name: JAMstack Istanbul
+    artpath: /img/chapters/istanbul-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack/
+  - name: JAMstack Oslo
+    artpath: /img/chapters/oslo-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-Oslo/
+  - name: JAMstack Atlanta
+    artpath: /img/chapters/atlanta-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMStack-Atlanta/
+  - name: JAMstack Cincinnati
+    artpath: /img/chapters/cincinnati-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-Cincinnati/
+  - name: JAMstack Phoenix
+    artpath: /img/chapters/phoenix-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack_PHX/
+  - name: JAMstack Minsk
+    artpath: /img/chapters/minsk-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/ru-RU/JAMstack-Minsk/
+  - name: JAMstack Chicago
+    artpath: /img/chapters/chicago-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-Chicago/
+  - name: JAMstack Lagos
+    artpath: /img/chapters/lagos-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMStack-Lagos/
+  - name: JAMstack Denver
+    artpath: /img/chapters/placeholder-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-Denver/
+  - name: JAMstack Israel
+    artpath: /img/chapters/placeholder-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMStack-IL/
+  - name: JAMstack Yemen
+    artpath: /img/chapters/placeholder-art.svg
+    btncopy: Join Now
+    link: https://www.facebook.com/groups/JAMstackYemenMeetups
+  - name: JAMstack Florence
+    artpath: /img/chapters/florence-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack_Florence/
+  - name: JAMstack Detroit
+    artpath: /img/chapters/placeholder-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-Detroit/
+  - name: JAMstack Singapore
+    artpath: /img/chapters/placeholder-art.svg
+    btncopy: Join Now
+    link: https://www.meetup.com/JAMstack-Singapore/
+
+gitterurl: https://gitter.im/jamstack/community
+forumurl: https://community.netlify.com
+
+bottomcta:
+  artpath: /img/chapters/meetup-map.svg
+  headline: Start a JAMstack Meetup
+  ctacopy: Contact Us
+  ctalink: mailto:community@netlify.com
