@@ -1,0 +1,319 @@
+/* import via postcss */
+@import "../site/css/ticker.css";
+
+/* purgecss start ignore */
+@tailwind  base;
+@tailwind  components;
+/* purgecss end ignore */
+
+
+@layer base {
+  h1 {
+    @apply font-bold text-4xl leading-tight my-8;
+  }
+  @screen md {
+    h1 {
+      @apply text-5xl;
+    }
+  }
+  h2 {
+      @apply text-white text-3xl font-bold leading-none mb-8;
+  }
+  @screen md {
+    h2 {
+      @apply text-4xl;
+    }
+  }
+}
+
+
+
+
+/*
+  Content sections conventions
+*/
+section {
+  @apply p-8;
+  @apply max-w-4xl;
+  @apply mx-auto;
+}
+
+
+section a,
+dd a {
+  @apply text-white;
+  @apply border-b;
+  @apply border-blue-100;
+}
+section:not(.cards):not(.no-underline) a:hover,
+section:not(.cards):not(.no-underline) a:focus,
+dd a:hover,
+dd a:focus {
+  @apply border-pink-500;
+}
+p+p {
+  @apply mt-4;
+}
+section.cards {
+  max-width: 66rem;
+}
+
+/*
+  CTA links
+*/
+a.cta:link,
+a.cta:visited {
+  @apply inline-block;
+  @apply bg-pink-900;
+  @apply text-white;
+  @apply rounded-full;
+  @apply text-sm;
+  @apply font-semibold;
+  @apply px-4;
+  @apply py-2;
+  @apply border-none;
+  @apply my-4;
+  @apply card-shadow;
+}
+a.cta:hover,
+a.cta:focus {
+  @apply bg-orange-500;
+  box-shadow: 0px 3px 15px rgba(241, 86, 77, 0.6);
+}
+
+
+/*
+  Footer links
+*/
+footer p a {
+  @apply border-b;
+  @apply border-blue-100;
+  @apply whitespace-no-wrap;
+}
+footer p a:hover,
+footer p a:focus {
+  @apply border-red-500;
+}
+
+
+/*
+  left/right flip-flopping lists
+*/
+@screen md {
+  .flip-flop > div:nth-child(even) {
+    @apply text-right;
+    @apply ml-auto;
+  }
+}
+
+
+.videowrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videowrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* purgecss start ignore */
+.bg-gradient-jams {
+  background: #D1036F linear-gradient(91.78deg, #D1036F 2.57%, #B6005F 96.33%);
+}
+.bg-gradient-pink-orange,
+.hover\:bg-gradient-pink-orange:hover,
+.hover\:bg-gradient-pink-orange:focus {
+  background: #E7017A linear-gradient(91.78deg, #E7017A 2.57%, #DF4A1F 96.33%);
+}
+.bg-gradient-blue-green {
+  background: #0090CA linear-gradient(101.87deg, #0090CA 0%, #00BFAD 105.55%);
+}
+
+.bg-gradient-card-sunrise {
+  --gradient-color-stops: #F0047F 0%, #FC814A 100%;
+}
+.bg-gradient-card-blue {
+  --gradient-color-stops: #04A2DD 0%, #4FF3EA 100%;
+}
+.bg-gradient-card-seafoam {
+  --gradient-color-stops: #88F9ED 0%, #00FFB2 100%;
+}
+.bg-gradient-card-gold {
+  --gradient-color-stops: #FFC803 0%, #FC814A 100%;
+}
+.bg-gradient-card-blue-seafoam.bg-gradient-card-blue-seafoam {
+  background: linear-gradient(101.87deg, #0090CA 0%, #00BFAD 105.55%), linear-gradient(180deg, #009DDC 0%, #58FCEC 100%);
+}
+
+.card-shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@supports (outline: none) {
+  .hover\:card-shadow-blue-seafoam:hover,
+  .hover\:card-shadow-blue-seafoam:focus {
+    outline: none;
+    box-shadow: 0px 3px 20px rgba(1, 159, 220, 0.6);
+  }
+  .hover\:card-shadow-seafoam:hover,
+  .hover\:card-shadow-seafoam:focus {
+    outline: none;
+    box-shadow: 0px 3px 20px rgba(135, 249, 237, 0.7);
+  }
+  .hover\:card-shadow-sunrise:hover,
+  .hover\:card-shadow-sunrise:focus {
+    outline: none;
+    box-shadow: 0px 3px 20px rgba(246, 62, 103, 0.6);
+  }
+  .hover\:card-shadow-gold:hover,
+  .hover\:card-shadow-gold:focus {
+    outline: none;
+    box-shadow: 0px 3px 20px rgba(255, 199, 4, 0.6);
+  }
+}
+
+.list-jams-logo > li,
+.list-jams-logo-pink > li,
+.list-jams-logo-border > li {
+  position: relative;
+}
+.list-jams-logo > li:after,
+.list-jams-logo-pink > li:after,
+.list-jams-logo-border > li:after {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  pointer-events: none;
+}
+.list-jams-logo > li:after {
+  background-image: url("data:image/svg+xml,%3Csvg width='8' viewBox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 0C2.68226 0 0 2.90578 0 6.5C0 10.0942 2.68226 13 6 13C9.31774 13 12 10.0942 12 6.5V0H6Z' fill='%235A5F75'/%3E%3C/svg%3E%0A");
+  left: 3em;
+}
+.list-jams-logo-pink > li:after {
+  background-image: url("data:image/svg+xml,%3Csvg width='8' viewBox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 0C2.68226 0 0 2.90578 0 6.5C0 10.0942 2.68226 13 6 13C9.31774 13 12 10.0942 12 6.5V0H6Z' fill='%23F0047F'/%3E%3C/svg%3E%0A");
+  left: 1.5em;
+}
+.list-jams-logo-border > li:before {
+  @apply text-gray-400;
+  content: "";
+  position: absolute;
+  left: 3.25em; /* 36px /16 */
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid;
+}
+.list-jams-logo-border > li:first-child:before {
+  top: 1.25em; /* 20px /16 */
+}
+.list-jams-logo-border > li:last-child:before {
+  bottom: 1.25em; /* 20px /16 */
+}
+.list-jams-no-bullet:after {
+  display: none;
+}
+
+.summary-no-arrow {
+  list-style: none;
+}
+.summary-no-arrow::-webkit-details-marker {
+  display: none;
+}
+details .summary-swap-open,
+details[open] .summary-swap-closed {
+  display: none;
+}
+details .summary-swap-closed,
+details[open] .summary-swap-open {
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .sm\:page-layout {
+    grid-template-columns: 16.875em minmax(0, 1fr);
+  }
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Desktop sticky nav */
+@media (min-width: 640px) and (min-height: 41.25em) { /* 660px */
+  .page-header {
+    position: sticky;
+    top: 0;
+  }
+  .page-nav {
+    justify-content: space-between;
+    /* Warning: this is the height of the logo */
+    /* Workaround for an issue with <details> and `flex` */
+    height: calc(100vh - 95px);
+  }
+}
+
+/* special text treatment on home page */
+.hero-text {
+  font-size: 2.5em;
+}
+@media (min-width: 40em) { /* 640px */
+  .hero-text {
+    font-size: 3em; /* 48px /16 */
+  }
+}
+@media (min-width: 64em) { /* 1024px */
+  .hero-text {
+    font-size: 4em; /* 64px /16 */
+  }
+}
+.hero-text-img {
+  height: 1.244444444em;
+  width: auto;
+  margin-top: -0.1111111111111em; /* -4px /36 */
+}
+
+.rounded-xl-embed {
+  border-radius: 0.9375rem; /* 15px /16 */
+}
+
+/* Tool layout */
+.tool-content h1,
+.tool-content h2,
+.tool-content h3 {
+  margin: .5em 0;
+}
+.tool-content h1,
+.tool-content h2,
+.tool-content h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.tool-content h1 ~ h2 {
+  font-size: 1.25em;
+}
+.tool-content h2 ~ h3 {
+  font-size: 1em;
+}
+
+.tool-content a[href] {
+  text-decoration: underline;
+}
+.tool-content ul {
+  list-style: disc;
+  padding-left: 1.5em;
+}
+.tool-content img {
+  @apply my-8;
+}
+/* purgecss end ignore */
+
+@tailwind utilities;
