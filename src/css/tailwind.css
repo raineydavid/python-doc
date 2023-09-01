@@ -183,14 +183,14 @@ footer p a:focus {
   }
 }
 
-.list-jams-logo > li,
-.list-jams-logo-pink > li,
-.list-jams-logo-border > li {
+.list-logo > li,
+.list-logo-pink > li,
+.list-logo-border > li {
   position: relative;
 }
-.list-jams-logo > li:after,
-.list-jams-logo-pink > li:after,
-.list-jams-logo-border > li:after {
+.list-logo > li:after,
+.list-logo-pink > li:after,
+.list-logo-border > li:after {
   content: "";
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -200,15 +200,15 @@ footer p a:focus {
   height: 100%;
   pointer-events: none;
 }
-.list-jams-logo > li:after {
+.list-logo > li:after {
   background-image: url("data:image/svg+xml,%3Csvg width='8' viewBox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 0C2.68226 0 0 2.90578 0 6.5C0 10.0942 2.68226 13 6 13C9.31774 13 12 10.0942 12 6.5V0H6Z' fill='%235A5F75'/%3E%3C/svg%3E%0A");
   left: 3em;
 }
-.list-jams-logo-pink > li:after {
+.list-logo-pink > li:after {
   background-image: url("data:image/svg+xml,%3Csvg width='8' viewBox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 0C2.68226 0 0 2.90578 0 6.5C0 10.0942 2.68226 13 6 13C9.31774 13 12 10.0942 12 6.5V0H6Z' fill='%23F0047F'/%3E%3C/svg%3E%0A");
   left: 1.5em;
 }
-.list-jams-logo-border > li:before {
+.list-logo-border > li:before {
   @apply text-gray-400;
   content: "";
   position: absolute;
@@ -217,13 +217,13 @@ footer p a:focus {
   bottom: 0;
   border-left: 1px solid;
 }
-.list-jams-logo-border > li:first-child:before {
+.list-logo-border > li:first-child:before {
   top: 1.25em; /* 20px /16 */
 }
-.list-jams-logo-border > li:last-child:before {
+.list-logo-border > li:last-child:before {
   bottom: 1.25em; /* 20px /16 */
 }
-.list-jams-no-bullet:after {
+.list-no-bullet:after {
   display: none;
 }
 
@@ -340,7 +340,7 @@ details[open] .summary-swap-open {
   display: none !important;
 }
 
-/* Jamstack TV */
+/* TV */
 .ais-SearchBox-input {
   @apply bg-blue-900;
   @apply text-white;
@@ -374,25 +374,25 @@ details[open] .summary-swap-open {
   }
 }
 
-.jamstacktv-link {
+.tv-link {
   display: flex;
   flex-wrap: wrap;
 }
-.jamstacktv-card {
+.tv-card {
   flex-basis: 18.75em; /* 300px /16 */
 }
-.jamstacktv-item {
+.tv-item {
   flex-basis: 18.75em; /* 300px /16 */
   flex-grow: 3;
 }
-.jamstacktv-card,
-.jamstacktv-img {
+.tv-card,
+.tv-img {
   border-radius: 1em 0 1em 1em;
 }
-.jamstacktv-img {
+.tv-img {
   width: 100%;
 }
-.jamstacktv-duration {
+.tv-duration {
   @apply inline-block;
   @apply px-1;
   @apply bg-black;
@@ -402,11 +402,11 @@ details[open] .summary-swap-open {
   right: .4em;
   top: .4em;
 }
-.jamstacktv-time {
+.tv-time {
   display: inline-block;
   margin-right: 0.25em; /* 4px /16 */
 }
-.jamstacktv-time > b {
+.tv-time > b {
   display: inline-block;
   width: 0;
   height: 0;
@@ -414,55 +414,55 @@ details[open] .summary-swap-open {
   border-bottom: 5px solid transparent;
   border-left: 7px solid currentColor;
 }
-.jamstacktv-time > b + b {
+.tv-time > b + b {
   margin-right: 3px;
 }
-.jamstacktv-item {
+.tv-item {
   @apply p-4;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.jamstacktv-item mark {
+.tv-item mark {
   @apply bg-pink-900;
   @apply text-white;
 }
-.jamstacktv-meta {
+.tv-meta {
   @apply leading-normal;
 }
-.jamstacktv-category:after {
+.tv-category:after {
   content: ": ";
 }
-.jamstacktv-no-skip .jamstacktv-category:after {
+.tv-no-skip .tv-category:after {
   content: "";
 }
-.jamstacktv-no-skip .jamstacktv-category {
+.tv-no-skip .tv-category {
   display: block;
 }
-.jamstacktv-caption {
+.tv-caption {
   @apply text-xl;
   @apply font-normal;
 }
-.jamstacktv-caption-quote {
+.tv-caption-quote {
   @apply italic;
 }
-.jamstacktv-caption-quote:before {
+.tv-caption-quote:before {
   content: "“"
 }
-.jamstacktv-caption-quote:after {
+.tv-caption-quote:after {
   content: "”"
 }
-.jamstacktv-no-skip .jamstacktv-title {
+.tv-no-skip .tv-title {
   @apply text-2xl;
   @apply font-bold;
 }
-.jamstacktv-no-skip .jamstacktv-caption {
+.tv-no-skip .tv-caption {
   display: none;
 }
-.js .jamstacktv-js {
+.js .tv-js {
   display: none;
 }
-.jamstacktv-scrubber {
+.tv-scrubber {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -472,7 +472,7 @@ details[open] .summary-swap-open {
   border-radius: 0 0 1em 1em;
   overflow: hidden;
 }
-.jamstacktv-scrubber > div {
+.tv-scrubber > div {
   height: 4px;
   background-color: red;
 }

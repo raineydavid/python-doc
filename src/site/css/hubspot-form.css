@@ -55,7 +55,7 @@
 }
 
 .survey-form .hs_email,
-.survey-form .hs_jamstack_survey_promo,
+.survey-form .hs_survey_promo,
 .survey-form .hs_address {
   @apply col-span-full;
 }

@@ -118,7 +118,7 @@ async function getReposFromMarkdown(glob) {
 module.exports = async function() {
   let data = {};
 
-  let ssgRepos = await getReposFromMarkdown("./src/site/generators/*.md");
+  let ssgRepos = await getReposFromMarkdown("./src/site/educators/*.md");
   for(let entry of ssgRepos) {
     data[`${entry.user}/${entry.repo}`] = await githubRequest(entry.user, entry.repo);
   }
