@@ -1,15 +1,16 @@
 {
-  "name": "jamstackdotorg",
-  "version": "2.0.0",
-  "description": "Home page for the Jamstack community",
-  "author": "Phil Hawksworth",
+  "name": "bie",
+  "version": "0.0.1",
+  "description": "Home page for the BlackIn community",
+  "author": "Lorraine",
   "license": "MIT",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/jamstack/jamstack.org"
+    "url": "https://github.com/blackin/education.com"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=18"
   },
   "scripts": {
     "build": "npm-run-all build:html build:css",
