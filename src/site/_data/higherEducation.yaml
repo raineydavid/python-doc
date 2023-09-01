@@ -1,0 +1,9 @@
+- name: Warwick
+  link: https://www.meetup.com/BIE-Warwick/
+  feed: https://api.meetup.com/Warwick/events
+
+- name: London
+  link: https://www.meetup.com/BIE-London/
+  feed: https://api.meetup.com/Jamstack-Boston/events
+  country: United Kingdom
+
