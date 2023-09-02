@@ -12,12 +12,12 @@
 
 [[redirects]]
   from = "/conference"
-  to = "https://jamstackconf.com/"
+  to = "https://blackineducation.com/conf"
   status = 302
 
 [[redirects]]
-  from = "/slack"
-  to = "https://join.slack.com/t/jamstack/shared_invite/zt-qkent5tv-0D0Nu3M1rJEHhVHE4zUMBw"
+  from = "/chat"
+  to = "https://discord.com/shared_invite/blackin"
   status = 302
 
 [[redirects]]
@@ -32,7 +32,7 @@
 
 [[redirects]]
   from = "/benefits"
-  to = "/why-jamstack"
+  to = "/why-black-in"
   status = 301
 
 [[redirects]]
@@ -42,7 +42,7 @@
 
 [[redirects]]
   from = "/conf/"
-  to = "https://jamstackconf.com/"
+  to = "https:/blackin.com/"
   status = 302
 
 [[redirects]]
@@ -57,7 +57,7 @@
 
 [[redirects]]
   from = "/survey"
-  to = "https://www.surveymonkey.com/r/jamstack-survey"
+  to = "https://www.surveymonkey.com/r/blackin-survey"
   status = 302
 
 [[redirects]]
